@@ -1,0 +1,44 @@
+ :root{
+    --fundo:#5CB8E4;
+    --azul:#AAC4FF;
+    --roxo:#B1B2FF;
+    --branco:#EEF1FF;
+ }
+*{
+    margin: 0%; padding:0;
+    background-color: var(--fundo);color:var(--branco)};
+header{
+    background-color: blue;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    text-align: center;
+}
+header img{
+
+    height:100%;
+}
+header ul{
+    background-color:#8758FF;
+    list-style:none;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+header ul li{
+    display: flex;
+    margin: 20px;
+    width: 150px;
+    height: 30px;
+    background-image: linear-gradient(var(--azul),var(--roxo));
+    border-radius:50px;
+    justify-content: center;
+    align-items: center;
+    background-color:#5CB8E4;
+}
+.baner{
+    background-color:#AAC4FF;
+    height: 500px;
+}
