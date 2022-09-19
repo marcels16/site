@@ -1,0 +1,67 @@
+:root{
+    --fundo:#5CB8E4;
+    --azul:#AAC4FF;
+    --roxo:#B1B2FF;
+    --branco:#EEF1FF;
+ }
+*{
+    margin: 0%; padding:0;
+    background-color: var(--fundo);color:var(--branco)};
+header{
+    background-color: blue;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center;
+    text-align: center;
+}
+header img{
+    display: flex;
+    height:100%;     
+    margin-left: 30%;
+}
+header ul{
+    background-color:#8758FF;
+    list-style:none;
+    display:flex;
+     flex-wrap: wrap; 
+    justify-content: center;
+    align-items: center;
+}
+header ul li{
+    display: flex;
+    margin: 20px;
+    width: 150px;
+    height: 30px;
+    background-image: linear-gradient(var(--azul),var(--roxo));
+    border-radius:50px;
+    justify-content: center;
+    align-items: center;
+    background-color:#5CB8E4;
+}
+.baner{
+    background-color:#AAC4FF;
+    height: 500px;
+    animation: slide1 10s infinite;
+}
+@keyframes slide1{
+    0%,30%{
+        background-image: url(midia/maxresdefault.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 1000px;
+    }
+    35%,65%{
+        background-image: url(midia/melhores-personagens-genshin-impact-768x432.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 900px;
+    }
+    70%,100%{
+        background-image: url(midia/Genshin-Impact-1200x450.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 1000px;
+    }
+}
