@@ -10,13 +10,11 @@ export default function App() {
       <Topo {...Mocks.Topo}/>
       <Detalhes {...Mocks.Detalhes}/>
       
-      <FlatList>
-        data={Mocks.itens.lista}
-        renderItem={Item}
-      </FlatList>
+      <FlatList
+       data={Mocks.itens.lista}
+       renderItem={Item}
+       keyExtractor={({nome})=>nome}
+      />
     </View>
   );
 }
-
-  
-
